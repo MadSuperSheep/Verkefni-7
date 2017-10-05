@@ -1,0 +1,9 @@
+.heading {
+
+  &__one {
+    background-color: red;
+    font-size: 80px;
+  }
+}
+
+@import "../scss/button";

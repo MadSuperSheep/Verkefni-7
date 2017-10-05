@@ -1,0 +1,31 @@
+{
+  "name": "verkefni-7",
+  "version": "1.0.0",
+  "description": "Stórt Verkefni 1",
+  "main": "index.js",
+  "scripts": {
+    "browser-sync": "browser-sync start --server --files *.html styles.css",
+    "sass": "node-sass --source-map-embed styles.scss styles.css -w",
+    "dev": "npm-run-all --parallel sass browser-sync",
+    "lint": "stylelint *.scss scss/*.scss --syntax scss"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MadSuperSheep/Verkefni-7.git"
+  },
+  "author": "Hjalti, Egill, Guðmundur",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.18.13",
+    "npm-run-all": "^4.1.1",
+    "stylelint": "^8.1.1",
+    "stylelint-config-primer": "^2.0.1"
+  },
+  "dependencies": {
+    "node-sass": "^4.5.3"
+  },
+  "bugs": {
+    "url": "https://github.com/MadSuperSheep/Verkefni-7/issues"
+  },
+  "homepage": "https://github.com/MadSuperSheep/Verkefni-7#readme"
+}
