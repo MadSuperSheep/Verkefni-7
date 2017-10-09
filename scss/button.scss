@@ -25,11 +25,6 @@
   cursor: pointer;
     
   transition: background-color 500ms ease;
-    
-  @media (max-width: 600px) {
-    max-width: 45%;
-    width: 100%;
-  }
 
   &:hover {
     color: #eee;
@@ -39,6 +34,7 @@
   &--normal {
     margin: auto;
     margin-top: 2rem;
+    margin-bottom: 10rem;
     width: 6rem;
     font-size: 1.5rem;
   }

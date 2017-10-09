@@ -1,0 +1,26 @@
+.forsida {
+  display: flex;
+  flex-direction: row;
+    
+  @media (max-width: 800px) { //lóðrétt þegar viewport er minna en 600px
+    flex-direction: column;
+  }
+    
+  &__slagord { //slagorðin koma lóðrétt
+    flex: 1;
+    flex-direction: column;
+  }
+    
+  &__checkogtext { //check og textinn er lárétt
+    flex-direction: row;
+    max-width: 50%;
+    width: 100%;
+  }
+    
+  &__text { //textinn lóðrétt flex
+    font-size: 1rem;
+    flex-direction: column;
+    padding-top: 90px;
+  }
+    
+}
