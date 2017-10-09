@@ -35,7 +35,8 @@ html.grid::before {
   margin-right: auto;
   margin-left: auto;
   width: calc(100% - (2 * var(--offset)));
-  max-width: var(--max_width);
+  /*max-width: var(--max_width);*/
+    max-width: 100vw;
   min-height: 100vh;
   content: '';
   background-image: var(--background-columns);
