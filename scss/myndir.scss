@@ -12,15 +12,20 @@
   &__1 { //mynd hliðiná checkboxum
     flex: 1;
     max-width: 50%;
-    max-height: 50vh; //bara tilraun
+    max-height: 60vh; //bara tilraun
     min-height: 50vh; //tilraun
     width: 100%;
     height: 100%;
     padding-left: 0.7rem;
     padding-top: 90px;
     object-fit: cover; //svo það teygist ekki á myndinni í mjög stóru viewporti
+<<<<<<< HEAD
+      
+    @media (max-width: 600px) { //stækkum myndina þegar hún fer niður fyrir textann
+=======
 
     @media (max-width: 800px) { //stækkum myndina þegar hún fer niður fyrir textann
+>>>>>>> 95f6f1d0070985ece664c171aee4d1a2f7ab8571
       max-width:100%;
       padding: 1rem;
     }
@@ -28,13 +33,15 @@
 
   &__profilemynd {
     flex: 1;
-    max-width: 33.3%;
-    max-height: 33.3%;
+    max-width: 100%;
+    max-height: 100%;
+    min-width: 0%;
+    min-height: 0%;  
     width: 100%;
     height: 100%;
     object-fit: cover;
     border-radius: 50%; //hringur
-    margin: 80px 52px 80px 50px;
+    //margin: 80px 52px 80px 50px;
   }
 
 }

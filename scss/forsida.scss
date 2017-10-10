@@ -3,8 +3,13 @@
 .forsida {
   display: flex;
   flex-direction: row;
+<<<<<<< HEAD
+    
+  @media (max-width: 600px) { //lóðrétt þegar viewport er minna en 600px
+=======
 
   @media (max-width: 800px) { //lóðrétt þegar viewport er minna en 600px
+>>>>>>> 95f6f1d0070985ece664c171aee4d1a2f7ab8571
     flex-direction: column;
   }
 
@@ -30,4 +35,20 @@
     width: 100%;
   }
 
+<<<<<<< HEAD
+  &__profileflex {
+    flex-direction: column;
+  }
+    
+  &__profiletexti {
+    max-width: 90%;  
+    flex-direction: column;
+    text-align: center;
+  }
+    
+    
+    
 }
+=======
+}
+>>>>>>> 95f6f1d0070985ece664c171aee4d1a2f7ab8571
