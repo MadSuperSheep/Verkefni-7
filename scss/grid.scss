@@ -35,8 +35,16 @@
     @include columns(6);
   }
 
+  &-5 {
+    @include columns(5);
+  }
+
   &-4 {
     @include columns(4);
+  }
+
+  &-1 {
+    @include columns(1);
   }
 
   &-sm {

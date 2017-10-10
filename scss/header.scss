@@ -1,12 +1,26 @@
 @import "../scss/config";
 
 .header {
+  max-width: $max-width;
+  margin: 0 auto;
+  overflow-x: hidden;
 
   &__1 {
   max-height: 100%;
   max-width: 100vw;
   width: 100%;
   background: transparent url(gogn/bg.jpg) no-repeat scroll 100% 80%;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  }
+
+  &__2 {
+  max-height: 100%;
+  height: 500px;
+  max-width: 100vw;
+  width: 100%;
+  background: transparent url(gogn/bg-subpage.jpg) no-repeat scroll 100% 80%;
   background-size: cover;
   display: flex;
   flex-direction: column;
