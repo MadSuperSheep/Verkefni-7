@@ -10,17 +10,29 @@
   &__1 { //mynd hliðiná checkboxum
     flex: 1;
     max-width: 50%;
-    max-height: 50%;
+    max-height: 50vh; //bara tilraun
+    min-height: 50vh; //tilraun
     width: 100%;
     height: 100%;
     padding-left: 0.7rem;
     padding-top: 90px;
+    object-fit: cover; //svo það teygist ekki á myndinni í mjög stóru viewporti
       
     @media (max-width: 800px) { //stækkum myndina þegar hún fer niður fyrir textann
       max-width:100%;
       padding: 1rem;
     }
-            
+  }
+    
+  &__profilemynd {
+    flex: 1;
+    max-width: 33.3%;
+    max-height: 33.3%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    margin: 80px 52px 80px 50px;
   }
 
 }
