@@ -1,4 +1,13 @@
 .quote {
   align-self: center;
   line-height: 1.5;
+
+  &__header {
+    font-size: 1.5rem;
+    font-style: italic;
+  }
+
+  &__footer {
+    margin-top: $gutter;
+  }
 }

@@ -1,0 +1,16 @@
+@import "../scss/config";
+
+.title {
+
+  &--one {
+    margin-top: ($gutter * 9); // -1 gutter út af row: margin-top
+    margin-bottom: ($gutter * 10); // row: margin-bottom hefur ekki áhrif
+    display: flex;
+    color: #ffffff;
+  }
+
+  &--two {
+    margin-top: ($gutter * 3); // + row frá header = gutter * 4
+    display: flex;
+  }
+}

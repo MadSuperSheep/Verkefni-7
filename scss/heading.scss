@@ -17,3 +17,16 @@
     font-size: 3rem;
   }
 }
+
+// Version 2.0 til að staðla stærðir
+// Til að rugla ekki í index.html
+.heading {
+
+  &__1 {
+    font-size: 4rem;
+  }
+
+  &__2 {
+    font-size: 1.5rem;
+  }
+}
