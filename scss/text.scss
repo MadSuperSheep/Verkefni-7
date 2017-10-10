@@ -1,5 +1,7 @@
+@import "../scss/config";
+
 .text {
   &__p {
-    
+    padding-bottom: $gutter;
   }
 }
