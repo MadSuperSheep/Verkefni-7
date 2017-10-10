@@ -1,0 +1,17 @@
+.heading {
+  max-width: 100%;
+  max-height: 100%;
+  margin-top: 0.3rem;
+  margin-bottom: 0.3rem;
+  text-align: center;
+
+  &__one {
+    margin-top: 14vh;
+    font-size: 1.5rem;
+    font-weight: lighter;
+  }
+
+  &__two {
+    font-size: 3rem;
+  }
+}
