@@ -23,3 +23,32 @@
   background-size: cover;
   }
 }
+
+
+.header {
+  &__2 {
+    max-height: 100%;
+    max-width: 100vw;
+    width: 100%;
+    background: transparent url(gogn/bg.jpg) no-repeat scroll 100% 80%;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+  }
+
+}
+
+// Eftirfarandi eru breytingar á header á buy.html síðunni.
+
+.header {
+  &__onee {
+    max-height: 100%;
+    max-width: 100vw;
+    width: 100%;
+    background: transparent url(gogn/bg-subpage.jpg) no-repeat scroll 100% 80%;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: $gutter * 4;
+  }
+}

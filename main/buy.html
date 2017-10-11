@@ -1,0 +1,135 @@
+<!doctype html>
+<html class="grid" lang="is">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Stórt verkefni 1</title>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700|Roboto+Slab:400,700" rel="stylesheet">
+  <!-- <link rel="stylesheet" href="styleguide.css"> -->
+  <link rel="stylesheet" href="grid.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <header class="header header__onee">
+    <h1 class="heading heading__twoo">Kaupa</h1>
+  </header>
+
+  <main>
+    <div class="col col-4">
+      <div class="info">
+
+        <div>
+          <h3 class="heading heading__threee">Persónuupplýsingar</h3>
+        </div>
+
+        <div class="info info__textbox">
+          <p>Nafn:</p>
+          <input class="info info inputtext"type="text" name="Nafn">
+        </div>
+        <div class="info info__textbox">
+          <p>Kennitala:</p>
+          <input type="text" name="Kennitala" value="123456-7890">
+        </div>
+        <div class="info info__buttons">
+          <p>Kyn:</p>
+          <input type="radio" name="editList" id="kona" value="kona" />
+          <label for="kona">Kona</label>
+
+          <input type="radio" name="editList" id="karl" value="karl" />
+          <label for="karl">Karl</label>
+
+          <input type="radio" name="editList" id="annað" value="annað" />
+          <label for="annað">Annað</label>
+        </div>
+        <div class="info info__textbox">
+          <p>Sími:</p>
+          <input type="text" name="Sími" value="+354 812 3456">
+        </div>
+        <div class="info info__textbox">
+          <p>Heimilisfang:</p>
+          <input type="text" name="Heimilisfang">
+        </div>
+        <div class="checkbox">
+          <input type="checkbox" name="getEmail" value="Email">
+          <p>Skrá mig á póstlista</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col col-4">
+      <div class="info">
+
+        <div>
+          <h2 class="heading heading__threee">Greiðsluupplýsingar</h2>
+        </div>
+
+        <div class="info info__cardlist">
+          <p>Greiða með:</p>
+          <select>
+            <option value="Kreditkort">Kreditkorti</option>
+            <option value="Debitkort">Debitkorti</option>
+          </select>
+        </div>
+
+        <div class="info info__textbox">
+          <p>Nafn á korti:</p>
+          <input type="text" name="Kort">
+        </div>
+        <div class="info info__textbox">
+          <p>Kortanúmer:</p>
+          <input type="text" name="Kortanúmer" value="5999-9999-9999-9999">
+        </div>
+        <div>
+          <p>Gildistími:</p>
+          <div class="info info__date">
+            <p>Mán</p>
+            <select>
+              <option value="1">01</option>
+              <option value="2">02</option>
+              <option value="3">03</option>
+              <option value="4">04</option>
+              <option value="5">05</option>
+              <option value="6">06</option>
+              <option value="7">07</option>
+              <option value="8">08</option>
+              <option value="9">09</option>
+              <option value="10">10</option>
+              <option value="11">11</option>
+              <option value="12">12</option>
+            </select>
+          </div>
+          <div class="info info__date">
+            <p>Ár</p>
+            <select>
+              <option value="2017">2017</option>
+              <option value="2018">2018</option>
+              <option value="2019">2019</option>
+              <option value="2020">2020</option>
+              <option value="2021">2021</option>
+              <option value="2022">2022</option>
+              <option value="2023">2023</option>
+              <option value="2024">2024</option>
+              <option value="2025">2025</option>
+              <option value="2026">2026</option>
+            </select>
+          </div>
+        </div>
+      </div>
+
+      <div class="button">
+        <button type="button">Panta</button>
+      </div>
+
+    </div>
+
+  </main>
+
+  <footer>
+    Fooþjónustan 123-4567 Opið 12-13 alla daga Bargata 1 900 Foobar © Fooþjónustan 2017
+  </footer>
+
+</body>
+
+</html>
