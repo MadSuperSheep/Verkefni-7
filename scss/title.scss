@@ -11,8 +11,12 @@
     color: #ffffff;
 
     @media (max-width: $max-width-two) {
-      padding: 0 $gutter;
       justify-content: center;
+    }
+
+    @media (max-width: $max-width-three) {
+      word-break: break-word;
+      padding-left: $gutter;
     }
   }
 
