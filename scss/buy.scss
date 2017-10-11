@@ -7,6 +7,8 @@
     border: #d2d2d2 solid 2px;
     border-radius: 5px;
     padding: 5px;
+    font-size: 1rem;
+    color: #d2d2d2;
   }
 
   &__textbox {
@@ -21,11 +23,13 @@
   &__date1 {
     width: 50%;
     margin-left: 10px;
+    margin-top: 0;
   }
 
   &__date2 {
     width: 50%;
     margin-left: 10px;
+    margin-top: 0;
   }
 
   &__datetext1 {
@@ -38,17 +42,29 @@
 
   &__list {
     width: 7rem;
+    font-size: 1rem;
+    border: #d2d2d2 solid 2px;
+  }
 
+  &__expiredate1 {
+    margin-bottom: 0;
+  }
+
+  &__expiredate2 {
+    margin-top: 0;
   }
 
   &__gendercheckbox {
-    margin-right: 1rem;
+    margin: 6px 1rem 0 0;
     max-height: 100%;
   }
 
   &__check {
-    margin: 0 1rem;
+    margin: 7px 1rem 0 1rem;
   }
 
+  &__space {
+    justify-content: space-around;
+  }
 
 }
