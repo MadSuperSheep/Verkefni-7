@@ -1,5 +1,54 @@
 @import "../scss/config";
 
-.info {
+.buy {
+
+  &__inputtext {
+    width: 100%;
+    border: #d2d2d2 solid 2px;
+    border-radius: 5px;
+    padding: 5px;
+  }
+
+  &__textbox {
+    margin: 1rem 0;
+  }
+
+  &__card {
+    width: 100%;
+    border: #d2d2d2 solid 2px;
+  }
+
+  &__date1 {
+    width: 50%;
+    margin-left: 10px;
+  }
+
+  &__date2 {
+    width: 50%;
+    margin-left: 10px;
+  }
+
+  &__datetext1 {
+    margin-right: 2rem;
+  }
+
+  &__datetext2 {
+    margin-right: 3rem;
+  }
+
+  &__list {
+    width: 7rem;
+
+  }
+
+  &__gendercheckbox {
+    margin-right: 1rem;
+    max-height: 100%;
+  }
+
+  &__check {
+    margin: 0 1rem;
+  }
+
 
 }
