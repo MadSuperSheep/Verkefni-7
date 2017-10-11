@@ -43,6 +43,14 @@
     @include columns(4);
   }
 
+  &-3 {
+    @include columns:(3);
+  }
+
+  &-2 {
+    @include columns(2);
+  }
+
   &-1 {
     @include columns(1);
   }
