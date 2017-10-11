@@ -1,13 +1,24 @@
+@import "../scss/config";
+
 .quote {
-  align-self: center;
   line-height: 1.5;
+  float: right;
+  margin-top: ($gutter * 2);
+  margin-bottom: ($gutter * 2);
+  margin-left: $gutter;
+
+  @media (max-width: $max-width-two) {
+    margin: 0;
+  }
 
   &__header {
+    padding: 0 $gutter;
     font-size: 1.5rem;
     font-style: italic;
   }
 
   &__footer {
-    margin-top: $gutter;
+    padding: 0 $gutter;
+    margin: $gutter 0;
   }
 }
