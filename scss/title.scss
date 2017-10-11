@@ -3,13 +3,17 @@
 .title {
   max-width: $max-width;
   margin: 0 auto;
-  padding-right: $gutter/2;
 
   &--one {
     margin-top: ($gutter * 9); // -1 gutter út af row: margin-top
     margin-bottom: ($gutter * 10); // row: margin-bottom hefur ekki áhrif
     display: flex;
     color: #ffffff;
+
+    @media (max-width: $max-width-two) {
+      padding: 0 $gutter;
+      justify-content: center;
+    }
   }
 
   &--two {

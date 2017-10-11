@@ -24,6 +24,10 @@
 
   &__1 {
     font-size: 4rem;
+
+    @media (max-width: $max-width-two) {
+      font-size: 3.5rem;
+    }
   }
 
   &__2 {

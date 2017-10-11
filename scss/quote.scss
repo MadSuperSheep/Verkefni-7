@@ -4,12 +4,18 @@
   align-self: center;
   line-height: 1.5;
 
+  @media (max-width: $max-width-two) {
+    align-self: flex-start;
+  }
+
   &__header {
+    padding: 0 $gutter;
     font-size: 1.5rem;
     font-style: italic;
   }
 
   &__footer {
+    padding: 0 $gutter;
     margin-top: $gutter;
   }
 }
