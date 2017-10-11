@@ -1,11 +1,14 @@
 @import "../scss/config";
 
 .quote {
-  align-self: center;
   line-height: 1.5;
+  float: right;
+  margin-top: ($gutter * 2);
+  margin-bottom: ($gutter * 2);
+  margin-left: $gutter;
 
   @media (max-width: $max-width-two) {
-    align-self: flex-start;
+    margin: 0;
   }
 
   &__header {
@@ -16,6 +19,6 @@
 
   &__footer {
     padding: 0 $gutter;
-    margin-top: $gutter;
+    margin: $gutter 0;
   }
 }

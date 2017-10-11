@@ -8,17 +8,11 @@
   margin-bottom: $gutter;
   margin-left: -($gutter / 2);
 
-  @media (max-width: 599px) {
-    margin-top: 0;
-  }
-
   &-1 {
-    justify-content: space-between;
-    flex-wrap: nowrap;
-
-    @media (max-width: $max-width-two) {
-      justify-content: space-around;
-    }
+    margin-top: $gutter;
+    margin-right: -($gutter / 2);
+    margin-bottom: $gutter;
+    margin-left: -($gutter / 2);
   }
 }
 
