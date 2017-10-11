@@ -1,8 +1,6 @@
 @import "../scss/config";
 
 .header {
-  max-width: $max-width;
-  margin: 0 auto;
   overflow: hidden; // losna við skrun stiku
 
   &__1 {

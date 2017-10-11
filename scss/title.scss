@@ -1,6 +1,9 @@
 @import "../scss/config";
 
 .title {
+  max-width: $max-width;
+  margin: 0 auto;
+  padding-right: $gutter/2;
 
   &--one {
     margin-top: ($gutter * 9); // -1 gutter út af row: margin-top
