@@ -1,29 +1,17 @@
 @import "../scss/config";
 
 .footer {
+  max-width: $max-width;
+  margin: 0 auto;
   overflow: hidden; // losna við skrun stiku
   max-height: 100%;
-  height: 250px;
-  background-color: #333333;
+  height: 500px;
+  //background-color: #000000;
+  //opacity: 0.5;
   background-size: cover;
-
-  &__content {
-    max-width: $max-width;
-    margin: 0 auto;
-    padding-top: $gutter;
-    padding-bottom: ($gutter * 2);
-    border-bottom: 1px solid #ffffff;
-  }
 
   &__text {
     text-align: center;
     font-size: 1rem;
-    color: #ffffff;
-  }
-
-  &__textbot {
-    text-align: center;
-    font-size: 1rem;
-    color: #696969;
   }
 }

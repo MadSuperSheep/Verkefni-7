@@ -1,34 +1,16 @@
 @import "../scss/config";
 
 .title {
-  max-width: $max-width;
-  margin: 0 auto;
 
   &--one {
     margin-top: ($gutter * 9); // -1 gutter út af row: margin-top
     margin-bottom: ($gutter * 10); // row: margin-bottom hefur ekki áhrif
     display: flex;
     color: #ffffff;
-
-    @media (max-width: $max-width-two) {
-      justify-content: center;
-    }
-
-    @media (max-width: $max-width-three) {
-      word-break: break-word;
-      padding-left: $gutter;
-    }
   }
 
   &--two {
     margin-top: ($gutter * 3); // + row frá header = gutter * 4
     display: flex;
-  }
-
-  &--onee { 
-    margin-top: ($gutter * 9); // -1 gutter út af row: margin-top
-    margin-bottom: ($gutter * 10); // row: margin-bottom hefur ekki áhrif
-    display: flex;
-    color: #ffffff;
   }
 }
