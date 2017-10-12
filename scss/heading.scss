@@ -25,6 +25,8 @@
   &__threee {
     font-weight: lighter;
     font-size: 1.5rem;
+    text-align: left;
+    padding-bottom: $gutter;
   }
 
 }
@@ -35,6 +37,11 @@
 
   &__1 {
     font-size: 4rem;
+
+    @media (max-width: $max-width-two) {
+      font-size: 3.5rem;
+      text-align: left;
+    }
   }
 
   &__2 {
