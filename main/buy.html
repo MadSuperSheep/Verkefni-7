@@ -12,80 +12,115 @@
 </head>
 
 <body>
-  <header class="header header__onee">
-    <h1 class="heading heading__twoo">Kaupa</h1>
+
+  <header class="header header__2 header-sm-2">
+    <div class="row title">
+      <div class="col-6 col-sm-12 title--onee">
+        <h1 class="heading heading__1">Kaupa</h1>
+      </div>
+    </div>
   </header>
 
   <main>
-    <div class="col col-4">
-      <div class="info">
+    <div class="buy">
 
-        <div>
-          <h3 class="heading heading__threee">Persónuupplýsingar</h3>
+      <div class="row buy buy__space">
+
+
+      <div class="col col-4">
+
+
+            <h3 class="heading heading__threee">Persónuupplýsingar</h3>
+
+          <div class="buy buy__textbox">
+            <p class="buy buy__text">Nafn:</p>
+            <input class="buy buy__inputtext" type="text" name="Nafn">
+          </div>
+          <div class="buy buy__textbox">
+            <p>Kennitala:</p>
+            <input class="buy buy__inputtext" type="text" name="Kennitala" value="123456-7890">
+          </div>
+
+          <div class="buy buy__buttons">
+            <p>Kyn:</p>
+
+            <div class="col col-4">
+
+            <div class="row">
+
+            <input class="buy buy__gendercheckbox" type="radio" name="editList" id="kona" value="kona" />
+            <label for="kona">Kona</label>
+
+          </div>
+
+
+          <div class="row">
+
+            <input class="buy buy__gendercheckbox" type="radio" name="editList" id="karl" value="karl" />
+            <label for="karl">Karl</label>
+
+          </div>
+
+          <div class="row">
+
+            <input class="buy buy__gendercheckbox" type="radio" name="editList" id="annað" value="annað" />
+            <label for="annað">Annað</label>
+
+          </div>
+
         </div>
 
-        <div class="info info__textbox">
-          <p>Nafn:</p>
-          <input class="info info inputtext"type="text" name="Nafn">
-        </div>
-        <div class="info info__textbox">
-          <p>Kennitala:</p>
-          <input type="text" name="Kennitala" value="123456-7890">
-        </div>
-        <div class="info info__buttons">
-          <p>Kyn:</p>
-          <input type="radio" name="editList" id="kona" value="kona" />
-          <label for="kona">Kona</label>
+          </div>
 
-          <input type="radio" name="editList" id="karl" value="karl" />
-          <label for="karl">Karl</label>
-
-          <input type="radio" name="editList" id="annað" value="annað" />
-          <label for="annað">Annað</label>
-        </div>
-        <div class="info info__textbox">
-          <p>Sími:</p>
-          <input type="text" name="Sími" value="+354 812 3456">
-        </div>
-        <div class="info info__textbox">
-          <p>Heimilisfang:</p>
-          <input type="text" name="Heimilisfang">
-        </div>
-        <div class="checkbox">
-          <input type="checkbox" name="getEmail" value="Email">
-          <p>Skrá mig á póstlista</p>
-        </div>
-      </div>
-    </div>
-
-    <div class="col col-4">
-      <div class="info">
-
-        <div>
-          <h2 class="heading heading__threee">Greiðsluupplýsingar</h2>
+          <div class="buy buy__textbox">
+            <p>Sími:</p>
+            <input class="buy buy__inputtext" type="text" name="Sími" value="+354 812 3456">
+          </div>
+          <div class="buy buy__textbox">
+            <p>Heimilisfang:</p>
+            <input class="buy buy__inputtext" type="text" name="Heimilisfang">
+          </div>
+          <div class="row buy buy__checkbox">
+            <input class="buy buy__check"type="checkbox" name="getEmail" value="Email" checked>
+            <p class="buy buy__input">Skrá mig á póstlista</p>
+          </div>
         </div>
 
-        <div class="info info__cardlist">
-          <p>Greiða með:</p>
-          <select>
+
+      <div class="col col-4">
+
+          <div>
+            <h2 class="heading heading__threee">Greiðsluupplýsingar</h2>
+          </div>
+
+          <div class="buy buy__cardlist">
+            <p>Greiða með:</p>
+            <select class="buy buy__card">
             <option value="Kreditkort">Kreditkorti</option>
             <option value="Debitkort">Debitkorti</option>
           </select>
-        </div>
+          </div>
 
-        <div class="info info__textbox">
-          <p>Nafn á korti:</p>
-          <input type="text" name="Kort">
-        </div>
-        <div class="info info__textbox">
-          <p>Kortanúmer:</p>
-          <input type="text" name="Kortanúmer" value="5999-9999-9999-9999">
-        </div>
-        <div>
-          <p>Gildistími:</p>
-          <div class="info info__date">
-            <p>Mán</p>
-            <select>
+          <div class="buy buy__textbox">
+            <p>Nafn á korti:</p>
+            <input class="buy buy__inputtext" type="text" name="Kort">
+          </div>
+          <div class="buy buy__textbox">
+            <p>Kortanúmer:</p>
+            <input class="buy buy__inputtext" type="text" name="Kortanúmer" value="5999-9999-9999-9999">
+          </div>
+
+
+
+          <p class="expiredate1">Gildistími:</p>
+
+          <div class="row buy buy__expiredate2">
+
+
+
+            <div class="row buy buy__date1">
+              <p class="buy buy__datetext1">Mán</p>
+              <select class="buy buy__list">
               <option value="1">01</option>
               <option value="2">02</option>
               <option value="3">03</option>
@@ -99,10 +134,12 @@
               <option value="11">11</option>
               <option value="12">12</option>
             </select>
-          </div>
-          <div class="info info__date">
-            <p>Ár</p>
-            <select>
+            </div>
+
+
+            <div class="row buy buy__date2">
+              <p class="buy buy__datetext2">Ár</p>
+              <select class="buy buy__list">
               <option value="2017">2017</option>
               <option value="2018">2018</option>
               <option value="2019">2019</option>
@@ -114,20 +151,68 @@
               <option value="2025">2025</option>
               <option value="2026">2026</option>
             </select>
+            </div>
+
           </div>
+
+        </div>
+
+      </div>
+    </div>
+
+    <div class="row">
+
+
+      <button class="button button--buy"type="button">Panta</button>
+
+
+  </div>
+
+
+  </main>
+
+  <footer class="footer">
+    <div class="row footer__content">
+
+      <div class="col col-3 col-sms-1">
+      </div>
+
+      <div class="col col-3 col-sms-5">
+        <div class="footer__text">
+          <p>Fooþjónustan</p>
+          <p>123-4567</p>
         </div>
       </div>
 
-      <div class="button">
-        <button type="button">Panta</button>
+      <div class="col col-3 col-sms-5">
+        <div class="footer__text">
+          <p>Opið 12-13 alla daga</p>
+          <p>Bargata 1</p>
+          <p>900 Foobar</p>
+        </div>
+      </div>
+
+      <div class="col col-3 col-sms-1">
       </div>
 
     </div>
 
-  </main>
+    <div class="row">
 
-  <footer>
-    Fooþjónustan 123-4567 Opið 12-13 alla daga Bargata 1 900 Foobar © Fooþjónustan 2017
+      <div class="col col-4 col-sms-3">
+      </div>
+
+      <div class="col col-4 col-sms-6">
+        <div class="footer__textbot">
+          <p>© Fooþjónustan 2017</p>
+        </div>
+      </div>
+
+      <div class="col col-4 col-sms-3">
+      </div>
+
+    </div>
+
   </footer>
 
 </body>
