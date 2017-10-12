@@ -33,47 +33,76 @@
     padding-top: 90px;
   }
 
-  &__profilemyndir {
-    align-content: flex-start;
-    align-items: baseline;
-    max-width: 100%;
+  &__profilemyndir { //container fyrir allt profiledót
+    box-sizing: border-box;
     width: 100%;
-    @media(max-width: 600px) {
-      flex-direction: column;
-    }
+    flex-wrap: wrap;
+    justify-content: space-between;
   }
 
-  &__profileflex {
+  &__profileflex { //container fyrir hvert og eitt profiledót. Flex element í profilemyndir.
+    box-sizing: border-box;
+    //border: 2px solid black;
+    border-collapse: collapse;
     align-items: center;
     flex: 1;
     flex-direction: column;
     height: 100%;
-    max-height: 100%;
     width: 100%;
+    padding-bottom: $gutter * 3;
   }
 
   &__profiletexti {
+    box-sizing: border-box;
     flex: 1;
     flex-direction: column;
-    max-width: 90%;
+    max-width: 95%;
+    min-height: 180px;
+    max-height: 180px;
     text-align: center;
+    position: relative;
+    
+    @media (max-width: 600px) {
+      min-height: 140px;
+      max-height: 140px;
+    }
+    
+    @media (min-width: 680px) { //svo sé ekki of mikið bil og clumpist ekki
+      min-height: 140px;
+      max-height: 140px;
+    }
   }
 }
 
-.p {
+.p { //texti fyrir neðan profilemyndir
   &__italic {
-    font-size: 1.3rem;
+    font-size: 20px;
     font-style: italic;
     font-weight: bold;
+    
+    @media (max-width: 600px) { //bara uppá útlitið
+      max-width: 300px;
+    }
+    
+    &__2 {
+      margin-top: 20px;
+    }
   }
 
   &__nafn {
     font-weight: bold;
-    padding-top: $gutter * .5;
+    position: absolute;
+    bottom: $gutter * 1.2; //20px fyrir ofan botninn
+    text-align: center;
+    width: 100%;
+    
   }
-
-  &__nafn2 {
-    font-weight: bold;
-    padding-top: $gutter * 2;
+  
+  &__askrift {
+    font-size: .8rem;
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    width: 100%;
   }
 }
