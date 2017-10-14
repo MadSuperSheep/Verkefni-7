@@ -33,7 +33,6 @@
     padding-top: 90px;
   }
 
-<<<<<<< HEAD
   &__profilemyndir {
     align-content: flex-start;
     align-items: baseline;
@@ -66,7 +65,7 @@
     font-size: 1.3rem;
     font-style: italic;
     font-weight: bold;
-=======
+
   &__profilemyndir { //container fyrir allt profiledót
     box-sizing: border-box;
     width: 100%;
@@ -95,12 +94,12 @@
     max-height: 180px;
     text-align: center;
     position: relative;
-    
+
     @media (max-width: 600px) {
       min-height: 140px;
       max-height: 140px;
     }
-    
+
     @media (min-width: 680px) { //svo sé ekki of mikið bil og clumpist ekki
       min-height: 140px;
       max-height: 140px;
@@ -113,40 +112,38 @@
     font-size: 20px;
     font-style: italic;
     font-weight: bold;
-    
+
     @media (max-width: 600px) { //bara uppá útlitið
       max-width: 300px;
     }
-    
+
     &__2 {
       margin-top: 20px;
     }
->>>>>>> dbbc645872f910e9b6014019f673a1dfd010e5b9
+
   }
 
   &__nafn {
     font-weight: bold;
-<<<<<<< HEAD
     padding-top: $gutter * .5;
   }
 
   &__nafn2 {
     font-weight: bold;
     padding-top: $gutter * 2;
-=======
     position: absolute;
     bottom: $gutter * 1.2; //20px fyrir ofan botninn
     text-align: center;
     width: 100%;
-    
+
   }
-  
+
   &__askrift {
     font-size: .8rem;
     position: absolute;
     bottom: 0;
     text-align: center;
     width: 100%;
->>>>>>> dbbc645872f910e9b6014019f673a1dfd010e5b9
+  }
   }
 }
