@@ -41,15 +41,29 @@
     font-size: 1.5rem;
   }
 
+  &--nav {
+    max-height: 80%;
+    margin: 0;
+    width: 5rem;
+    font-size: 1rem;
+    border-radius: 10%;
+    height: 10%;
+    padding: 5px;
 
-  &--big {
-    font-size: 90px;
-    background-color: blue;
+    &__2 {
+      background-color: transparent;
+      max-width: 75px;
+      border: none;
+
+
+    &:hover {
+      background-color: transparent;
     }
+  }
+}
 
   &--buy {
     margin: auto;
     border-radius: 5px;
   }
-
-  }
+}

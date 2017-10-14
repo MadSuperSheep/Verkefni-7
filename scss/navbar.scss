@@ -1,0 +1,29 @@
+@import "../scss/config";
+
+.navbar {
+  max-width: $max-width;
+  overflow: hidden;
+  position: fixed;
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.9);
+  padding-bottom: $gutter / 4;
+  padding-top: $gutter / 4;
+  align-items: center;
+
+  &__index {
+    text-decoration: none;
+    color: rgb(255, 245, 254);
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+
+  &__ab {
+    width: 100%;
+    justify-content: flex-end;
+  }
+
+  &__rel {
+    max-width: $max-width;
+    margin: auto;
+  }
+}
