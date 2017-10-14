@@ -1,4 +1,4 @@
-@import '../scss/config';
+@import "../scss/config";
 
 .myndir {
 
@@ -30,16 +30,6 @@
   }
 
   &__profilemynd {
-    border-radius: 50%; //hringur
-    flex: 1;
-    height: 100%;
-    max-height: 400px;
-    max-width: 400px;
-    min-height: 1px;
-    min-width: 1px;
-    padding: $gutter * 2;
-    width: 100%;
-    //object-fit: cover;
     display: block;
     box-sizing: border-box;
     border-radius: 50%; //hringur
