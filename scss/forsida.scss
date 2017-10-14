@@ -1,4 +1,4 @@
-@import '../scss/config';
+@import "../scss/config";
 
 .forsida {
   display: flex;
@@ -33,39 +33,6 @@
     padding-top: 90px;
   }
 
-  &__profilemyndir {
-    align-content: flex-start;
-    align-items: baseline;
-    max-width: 100%;
-    width: 100%;
-    @media(max-width: 600px) {
-      flex-direction: column;
-    }
-  }
-
-  &__profileflex {
-    align-items: center;
-    flex: 1;
-    flex-direction: column;
-    height: 100%;
-    max-height: 100%;
-    width: 100%;
-  }
-
-  &__profiletexti {
-    flex: 1;
-    flex-direction: column;
-    max-width: 90%;
-    text-align: center;
-  }
-}
-
-.p {
-  &__italic {
-    font-size: 1.3rem;
-    font-style: italic;
-    font-weight: bold;
-
   &__profilemyndir { //container fyrir allt profiledót
     box-sizing: border-box;
     width: 100%;
@@ -94,12 +61,12 @@
     max-height: 180px;
     text-align: center;
     position: relative;
-
+    
     @media (max-width: 600px) {
       min-height: 140px;
       max-height: 140px;
     }
-
+    
     @media (min-width: 680px) { //svo sé ekki of mikið bil og clumpist ekki
       min-height: 140px;
       max-height: 140px;
@@ -112,38 +79,30 @@
     font-size: 20px;
     font-style: italic;
     font-weight: bold;
-
+    
     @media (max-width: 600px) { //bara uppá útlitið
       max-width: 300px;
     }
-
+    
     &__2 {
       margin-top: 20px;
     }
-
   }
 
   &__nafn {
     font-weight: bold;
-    padding-top: $gutter * .5;
-  }
-
-  &__nafn2 {
-    font-weight: bold;
-    padding-top: $gutter * 2;
     position: absolute;
     bottom: $gutter * 1.2; //20px fyrir ofan botninn
     text-align: center;
     width: 100%;
-
+    
   }
-
+  
   &__askrift {
     font-size: .8rem;
     position: absolute;
     bottom: 0;
     text-align: center;
     width: 100%;
-  }
   }
 }
