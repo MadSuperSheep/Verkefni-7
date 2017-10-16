@@ -2,68 +2,83 @@
 
 .button { //eiginlega allt tekið frá verkefni 6
 
-  display: inline-block;
-
-  margin: 0;
-  padding: 10px 5px;
+  background-color: #666;
   border: 1px solid #666;
   border-radius: 2px;
-  width: 100%;
-  max-width: 256px;
-
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-
   color: #eee;
-  background-color: #666;
-
+  cursor: pointer;
+  display: inline-block;
   font-family: "Roboto Slab"; //aukafont?
   font-size: 1rem;
-
-  text-decoration: none;
+  margin: 0;
+  max-width: 256px;
+  overflow: hidden;
+  padding: 10px 5px;
   text-align: center;
-
-  cursor: pointer;
-
+  text-decoration: none;
+  text-overflow: ellipsis;
   transition: background-color 500ms ease;
+  white-space: nowrap;
+  width: 100%;
 
   &:hover {
-    color: #eee;
     background-color: #333;
+    color: #eee;
+  }
+
+  @keyframes visible {
+    0% {
+      opacity: 0;
+    }
+
+    100% {
+      opacity: 1;
+    }
   }
 
   &--normal {
-    margin: auto;
-    margin-top: 2rem;
-    margin-bottom: 10rem;
-    width: 6rem;
+    animation: 2s ease 3s 1 forwards visible;
     font-size: 1.5rem;
+    margin: auto;
+    margin-bottom: 10rem;
+    margin-top: 2rem;
+    opacity: 0;
+    width: 8rem;
   }
 
   &--nav {
-    max-height: 80%;
-    margin: 0;
-    width: 5rem;
-    font-size: 1rem;
     border-radius: 10%;
+    font-size: 1rem;
     height: 10%;
+    margin: 0;
+    max-height: 80%;
     padding: 5px;
+    width: 5rem;
 
     &__2 {
       background-color: transparent;
+      border: 0;
       max-width: 75px;
-      border: none;
 
 
-    &:hover {
-      background-color: transparent;
+      &:hover {
+        background-color: transparent;
+      }
     }
-  }
 }
 
   &--buy {
-    margin: auto;
     border-radius: 5px;
+    margin: auto;
+  }
+
+  &--big {
+    border-radius: 3%;
+    font-size: 2rem;
+    margin: auto;
+    margin-bottom: $gutter * 5;
+    max-width: $max-width-three - 160px;
+    padding-left: 10px;
+    width: 100%;
   }
 }
