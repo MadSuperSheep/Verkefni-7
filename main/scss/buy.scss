@@ -1,14 +1,13 @@
 @import "../scss/config";
 
 .buy {
-
   &__inputtext {
     width: 100%;
-    border: #d2d2d2 solid 2px;
-    border-radius: 5px;
     padding: 5px;
     font-size: 1rem;
     color: rgb(0, 0, 0);
+    border: #d2d2d2 solid 2px;
+    border-radius: 5px;
   }
 
   &__textbox {
@@ -22,14 +21,14 @@
 
   &__date1 {
     width: 50%;
-    margin-left: 10px;
     margin-top: 0;
+    margin-left: 10px;
   }
 
   &__date2 {
     width: 50%;
-    margin-left: 10px;
     margin-top: 0;
+    margin-left: 10px;
   }
 
   &__datetext1 {
@@ -55,16 +54,15 @@
   }
 
   &__gendercheckbox {
-    margin: 6px 1rem 0 0;
     max-height: 100%;
+    margin: 6px 1rem 0 0;
   }
 
   &__check {
-    margin: 7px 1rem 0 1rem;
+    margin: 7px 1rem 0;
   }
 
   &__space {
     justify-content: space-around;
   }
-
 }
