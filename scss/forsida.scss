@@ -5,7 +5,7 @@
   flex-direction: row;
 
   &__slagordflex {
-    margin: $gutter 0;
+    margin: $gutter * 5 0 $gutter * 10;
     @media (max-width: 600px) { //lóðrétt þegar viewport er minna en 600px
       flex-direction: column;
     }
@@ -35,42 +35,46 @@
 
   &__profilemyndir { //container fyrir allt profiledót
     box-sizing: border-box;
-    width: 100%;
     flex-wrap: wrap;
     justify-content: space-between;
+    width: 100%;
   }
 
   &__profileflex { //container fyrir hvert og eitt profiledót. Flex element í profilemyndir.
-    box-sizing: border-box;
-    //border: 2px solid black;
-    border-collapse: collapse;
     align-items: center;
+    border-collapse: collapse;
+    box-sizing: border-box;
     flex: 1;
     flex-direction: column;
     height: 100%;
-    width: 100%;
     padding-bottom: $gutter * 3;
+    width: 100%;
   }
 
   &__profiletexti {
     box-sizing: border-box;
     flex: 1;
     flex-direction: column;
+    max-height: 180px;
     max-width: 95%;
     min-height: 180px;
-    max-height: 180px;
-    text-align: center;
     position: relative;
-    
+    text-align: center;
+
     @media (max-width: 600px) {
-      min-height: 140px;
       max-height: 140px;
+      min-height: 140px;
     }
-    
+
     @media (min-width: 680px) { //svo sé ekki of mikið bil og clumpist ekki
-      min-height: 140px;
       max-height: 140px;
+      min-height: 140px;
     }
+  }
+
+  &__bida {
+    flex-direction: column;
+    margin: auto;
   }
 }
 
@@ -79,29 +83,29 @@
     font-size: 20px;
     font-style: italic;
     font-weight: bold;
-    
+
     @media (max-width: 600px) { //bara uppá útlitið
       max-width: 300px;
     }
-    
+
     &__2 {
       margin-top: 20px;
     }
   }
 
   &__nafn {
+    bottom: $gutter * 1.2; //20px fyrir ofan botninn
     font-weight: bold;
     position: absolute;
-    bottom: $gutter * 1.2; //20px fyrir ofan botninn
     text-align: center;
     width: 100%;
-    
+
   }
-  
+
   &__askrift {
+    bottom: 0;
     font-size: .8rem;
     position: absolute;
-    bottom: 0;
     text-align: center;
     width: 100%;
   }
