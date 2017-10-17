@@ -1,14 +1,14 @@
 @import "../scss/config";
 
 .title {
-  margin: 0 auto;
   max-width: $max-width;
+  margin: 0 auto;
 
   &--one {
-    color: #ffffff;
     display: flex;
-    margin-bottom: ($gutter * 10); // row: margin-bottom hefur ekki áhrif
     margin-top: ($gutter * 9); // -1 gutter út af row: margin-top
+    margin-bottom: ($gutter * 10); // row: margin-bottom hefur ekki áhrif
+    color: #fff;
 
     @media (max-width: $max-width-two) {
       justify-content: center;
@@ -26,9 +26,9 @@
   }
 
   &--onee {
-    color: #ffffff;
     display: flex;
-    margin-bottom: ($gutter * 10); // row: margin-bottom hefur ekki áhrif
     margin-top: ($gutter * 9); // -1 gutter út af row: margin-top
+    margin-bottom: ($gutter * 10); // row: margin-bottom hefur ekki áhrif
+    color: #fff;
   }
 }

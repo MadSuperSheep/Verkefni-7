@@ -1,20 +1,20 @@
 @import "../scss/config";
 
 .navbar {
-  max-width: $max-width;
-  overflow: hidden;
   position: fixed;
   display: flex;
-  background-color: rgba(0, 0, 0, 0.9);
-  padding-bottom: $gutter / 4;
+  max-width: $max-width;
   padding-top: $gutter / 4;
+  padding-bottom: $gutter / 4;
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.9);
   align-items: center;
 
   &__index {
-    text-decoration: none;
-    color: rgb(255, 245, 254);
     font-size: 1.5rem;
     font-weight: bold;
+    color: rgb(255, 245, 254);
+    text-decoration: none;
   }
 
   &__ab {

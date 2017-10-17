@@ -1,11 +1,11 @@
 @import "../scss/config";
 
 .quote {
-  line-height: 1.5;
   float: right;
   margin-top: ($gutter * 2);
   margin-bottom: ($gutter * 2);
   margin-left: $gutter;
+  line-height: 1.5;
 
   @media (max-width: $max-width-two) {
     margin: 0;

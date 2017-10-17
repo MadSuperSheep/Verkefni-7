@@ -1,52 +1,47 @@
 @import "../scss/config";
 
 .myndir {
-
   &__check { //checkbox
+    width: 5%;
     height: 5%;
     padding-top: 90px;
-    width: 5%;
 
   }
 
   &__1 { //mynd hliðiná checkboxum
     flex: 1;
-    height: 100%;
-    max-height: 600px;
-    max-width: 600px;
-    min-height: 550px;
-    min-width: 1px;
-    object-fit: cover; //svo það teygist ekki á myndinni í mjög stóru viewporti
-    padding-left: .7rem;
-    padding-top: 90px;
     width: 100%;
+    min-width: 1px;
+    max-width: 600px;
+    height: 100%;
+    min-height: 550px;
+    max-height: 600px;
+    padding-top: 90px;
+    padding-left: 0.7rem;
+    object-fit: cover; //svo það teygist ekki á myndinni í mjög stóru viewporti
 
     @media (max-width: 600px) { //stækkum myndina þegar hún fer niður fyrir textann
-      margin-top: $gutter;
       max-width: 100%;
       min-height: 1px;
       padding: 1rem;
+      margin-top: $gutter;
     }
   }
 
   &__profilemynd {
     display: block;
+    width: 100%;
+    min-width: 1%;
+    max-width: 80%;
+    height: 100%;
+    min-height: 1%;
     box-sizing: border-box;
     border-radius: 50%; //hringur
     flex: 1;
 
-    max-width: 80%;
-    min-height: 1%;
-    min-width: 1%;
-
-    width: 100%;
-    height: 100%;
-
     @media (max-width: 600px) {
-      max-width: 220px;
       min-width: 220px;
-
+      max-width: 220px;
     }
   }
-
 }
